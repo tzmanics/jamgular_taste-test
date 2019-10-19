@@ -1,10 +1,26 @@
 <div class="navigation">
-  <ul>
-    <li><a [routerLink]="['/']">Home</a></li>
-    <li><a [routerLink]="['/bestpractices']">Best Practices</a></li>
-    <li><a [routerLink]="['/examples']">Examples</a></li>
-    <li><a [routerLink]="['/resources']">Resources</a></li>
-  </ul>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>thumb_up</mat-icon>
+      <span>Best Practices</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>visibility</mat-icon>
+      <span>Examples</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>bookmarks</mat-icon>
+      <span>Resources</span>
+    </button>
+  </mat-menu>
+
 </div>
 <div class="header">
   <h1>JAMgular</h1>
