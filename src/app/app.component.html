@@ -3,21 +3,21 @@
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+    <button mat-menu-item [routerLink]="['/home']" routerLinkActive="router-link-active">
       <mat-icon>home</mat-icon>
       <span>Home</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item [routerLink]="['/best-practices']" routerLinkActive="router-link-active" >
       <mat-icon>thumb_up</mat-icon>
       <span>Best Practices</span>
     </button>
-    <button mat-menu-item>
-      <mat-icon>visibility</mat-icon>
-      <span>Examples</span>
-    </button>
-    <button mat-menu-item>
+    <button mat-menu-item [routerLink]="['/resources']" routerLinkActive="router-link-active" >
       <mat-icon>bookmarks</mat-icon>
       <span>Resources</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/examples']" routerLinkActive="router-link-active" >
+      <mat-icon>visibility</mat-icon>
+      <span>Examples</span>
     </button>
   </mat-menu>
 
